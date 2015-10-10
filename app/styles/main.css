@@ -1,0 +1,29 @@
+md-autocomplete-wrap input[type=text]:focus:not([readonly]),md-autocomplete-wrap input[type=password]:focus:not([readonly]),md-autocomplete-wrap input[type=email]:focus:not([readonly]),md-autocomplete-wrap input[type=url]:focus:not([readonly]),md-autocomplete-wrap input[type=time]:focus:not([readonly]),md-autocomplete-wrap input[type=date]:focus:not([readonly]),md-autocomplete-wrap input[type=datetime-local]:focus:not([readonly]),md-autocomplete-wrap input[type=tel]:focus:not([readonly]),md-autocomplete-wrap input[type=number]:focus:not([readonly]),md-autocomplete-wrap input[type=search]:focus:not([readonly]),md-autocomplete-wrap textarea.materialize-textarea:focus:not([readonly]){
+  border-bottom: none;
+  box-shadow: none;
+}
+.md-primary{
+	background-color:#26a69a;
+}
+md-input-container:not(.md-input-invalid).md-input-focused label{
+	color:#fff;
+}
+.md-second{
+		background-color:rgb(63,81,181);
+}
+.md-color{color:rgb(63,81,181) !important;}
+
+.card-panel{
+	opacity:.5;
+}
+.wt{
+	color:white !important;
+}
+.bt{
+	color:black !important;
+}
+
+#dept-search{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}

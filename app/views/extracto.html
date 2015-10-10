@@ -1,0 +1,28 @@
+<div>
+	<div class="block">
+		<div ng-show="headerVisible">
+			<div class="label">
+				Header
+			</div>
+			<input type="checkbox" ng-model="header">
+		</div>
+		<div ng-show="separatorVisible" >
+			<div class="label">
+				Seperator
+			</div>
+			<input type="text" ng-change="changeSeparator" ng-model="separator">
+		</div>
+		<div class="file-field input-field col s6">
+
+	      <div class="btn">
+	        <span>File</span>
+					<input type="file" class="md-input" ng-model="record">
+	      </div>
+	      <div class="file-path-wrapper">
+	        <input class="file-path validate" type="text" placeholder="Upload a CSV or line delimited txt ">
+	      </div>
+
+		</div>
+	</div>
+
+</div>

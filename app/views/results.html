@@ -1,0 +1,74 @@
+
+    <md-toolbar class="md-primary" style="margin-top:40px">
+    <div class="md-toolbar-tools">
+      <h2 class="md-flex">Browse the degrees offered at CMU</h2>
+    </div>
+  </md-toolbar>
+  <md-content style="margin-bottom:40px;"  class="md-whiteframe-z3" >
+
+    <md-tabs style="height:600px;" md-border-bottom>
+      <md-tab class="md-padding" label="{{k}}" ng-repeat="(k,value) in degrees">
+          <md-list>
+      <md-subheader md-scroll-shrink>Majors and Minors in {{k}}</md-subheader>
+      <md-list class="md-padding">
+      <md-list-item class="md-3-line" ng-repeat="v in value">
+        <div class="md-list-item-text" layout="column">
+          <h3 class="md-color">Name: {{ v.name }}</h3>
+          <h4>Deptartment    {{ v.department }}</h4>
+          <div style="margin-top:10px;">
+            <label>Requirements</label> </br>{{ v.requirements | join:', '}}
+          </div>
+          <md-divider inset></md-divider>
+        </div>
+      </md-list-item>
+      <md-divider ></md-divider>
+      </md-list>
+
+      </md-tab>
+    </md-tabs>
+  </md-content>
+  <div class="row">
+    <div class="col m12">
+      <div class="md-whiteframe-z3 md-padding white">
+        <h5 class="header black-text center">Information Systems - 87% Complete</h5>
+        <div class="progress">
+            <div class="determinate" style="width: 87%"></div>
+        </div>
+        <h6 class="black-text center"> 4 Classes Remaining </h6>
+        <h6 class="black-text center"> 36 Units Remaining  </h6>
+
+      </div>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col s4 m4">
+        <!--searchbox-->
+        <h4 style="margin-top:45px;" class="header black-text"><i class="material-icons">play_arrow</i>Top 3 Majors</h4>
+        <div class="collection">
+
+          <a class="collection-item" flex>Business<span style="margin-left:30px;" class="chip">92%</span></a>
+          <a class="collection-item" flex>Human Computer Interaction<span style="margin-left:30px;" class="% complete badge">82%</span></a>
+          <a class="collection-item" flex>Computer Science<span style="margin-left:30px;" class="% complete badge">60%</span></a>
+
+        </div>
+        </br>
+        <h4 class="header black-text"><i class="material-icons">play_arrow</i>Top 3 Minors</h4>
+        <div class="collection">
+          <a class="collection-item" flex>Business Administration<span style="margin-left:30px;" class="% complete badge">92%</span></a>
+          <a class="collection-item" flex>Human Computer Interaction<span style="margin-left:30px;" class="% complete badge">82%</span></a>
+          <a class="collection-item" flex>Computer Science<span style="margin-left:30px;" class="% complete badge">60%</span></a>
+        </div>
+      </div>
+    </div>
+
+  <md-content>
+    <h5 class="black-text center">Course History</h5>
+    <div ng-repeat="(k, v) in dat" class="col m12">
+      <div style="{{'background-color:'+(v.dept ? '#4'+v.dept : '#26a69a')}}" class="card-panel ">
+        <span class="header white-text center">{{k}} ({{v.units || 9}}.0 units)</br>
+        {{v.name}} </span>
+      </div>
+    </div>
+  </md-content>
+
+

@@ -1,5 +1,15 @@
 # classified
 
+## Summary
+
+This was something I mocked up in ~ 1 hour for a group project. The goal was to create an app that shows you the majors and minors at CMU that you're closest to acheiving.
+
+I scraped and parsed the data from the following systems, authenticating protected apps using SAML2 SSO to get through CMU's WebISO wall / Shibboleth.
+See
+
+https://github.com/PseudoSky/cmu_scraper
+
+
 ## Problem
 
 Although CMU is one of the top tech schools in the US* (says people that go here), our systems that help students register are hard to use.
